@@ -4,11 +4,15 @@ import './index.css';
 import App from './App.jsx';
 import Greeting from './greeting.jsx';
 import Navbar from './navbar.jsx';
+import List from './list.jsx';
 import "./navbar.css";
+
+const list = ["green", "blue", "red", "purple", "pink"];
 
 createRoot(document.querySelector("body")).render(
   <StrictMode>
     <Navbar />
-    <Greeting />
+    {/* <Greeting /> */}
+    <List list={list}/>
   </StrictMode>,
 );
